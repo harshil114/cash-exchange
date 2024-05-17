@@ -5,57 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exchange Cash</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <nav class="navigation">
-        <div class="navigation__container">
-            <h1 class="navigation__container-heading">Exchange Cash</h1>
-            <p class="navigation__container-text">Enter the bill amount and cash given by you and know minimum number of
-                notes to return</p>
-        </div>
-    </nav>
-
-
-    <main class="main">
-        <div class="main__container">
-            <div class="main__container-data">
-                <div class="main__container-content">
-                    <label for="bill-amount">Bill Amount</label>
-                    <input type="number" id="bill-amount">
-                    <label for="cash-given">Cash Given</label>
-                    <input type="number" id="cash-given">
-                </div>              
-                <button id="button">Check</button>
+    <div class="body-main">
+        <nav class="navigation;">
+            <div class="navigation__container">
+                <h1 class="navigation__container-heading">Exchange Cash</h1>
+                <p class="navigation__container-text">Enter the bill amount and cash given by you and know minimum number of
+                    notes to return</p>
             </div>
-            <p id="error-msg"></p>
-            <table>
-                <caption>Return Change</caption>
-                <tr>
-                    <th>No of Notes</th>
-                    <td class="number-of-note"></td>
-                    <td class="number-of-note"></td>
-                    <td class="number-of-note"></td>
-                    <td class="number-of-note"></td>
-                    <td class="number-of-note"></td>
-                    <td class="number-of-note"></td>
-                    <td class="number-of-note"></td>
-                </tr>
-                <tr>
-                    <th>Available Notes</th>
-                    <td>500</td>
-                    <td>200</td>
-                    <td>100</td>
-                    <td>50</td>
-                    <td>20</td>
-                    <td>10</td>
-                    <td>1</td>
-                </tr>
-            </table>
-
-        </div>
-    </main>
+        </nav>
+    
+    
+        <main class="main">
+            <div class="main__container">
+                <div class="main__container-data">
+                    <div class="main__container-content">
+                        <label for="bill-amount">Bill Amount</label>
+                        <input type="number" id="bill-amount">
+                        <label for="cash-given">Cash Given</label>
+                        <input type="number" id="cash-given">
+                    </div>             
+                </div>
+                <div class="main__container-button">
+                    <button id="button">Check</button>
+                </div>
+                
+                <p id="error-msg"></p>
+                <table>
+                    <caption>Return Change</caption>
+                    <tr>
+                        <th>No of Notes</th>
+                        <td class="number-of-note"></td>
+                        <td class="number-of-note"></td>
+                        <td class="number-of-note"></td>
+                        <td class="number-of-note"></td>
+                        <td class="number-of-note"></td>
+                        <td class="number-of-note"></td>
+                        <td class="number-of-note"></td>
+                    </tr>
+                    <tr>
+                        <th>Available Notes</th>
+                        <td>500</td>
+                        <td>200</td>
+                        <td>100</td>
+                        <td>50</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+    
+            </div>
+        </main>
+    </div>
+    
 
     <script src="app.js"></script>
 
